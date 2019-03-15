@@ -2,16 +2,11 @@
 
 ## Introduction
 
-Azure Data Factory (ADF) is a hybrid data integration service, designed to ease the construction of complex data movement pipelines. Mapping Data Flows, a feature of ADF, is designed to enable graphical construction of data
-transformation pipelines, at scale, using the *Azure Databricks* Spark engine,
-without the need for any hand coding or Spark knowledge.
+Azure Data Factory (ADF) is a hybrid ETL service, designed to ease the construction of complex data integrations pipelines. Mapping Data Flows, a feature of ADF, is designed to enable graphical construction of data transformation pipelines, at scale, using the Azure Databricks Spark engine, without the need for any hand coding or Spark knowledge.
 
-This hands-on lab will demonstrate the capabilities of ADF and Mapping Data Flow
-by using a sample template that introduces several Data Flow features. This lab
-will also implement a complex real-world data pipeline scenario that utilizes
-some of the template features.
+This hands-on lab will demonstrate the capabilities of ADF and Mapping Data Flow by using a sample template that introduces several Data Flow features. This lab will also implement a complex real-world data pipeline scenario that utilizes some of the template features.
 
-##Prerequisites 
+## Prerequisites 
 
 Before starting this lab, you will need the following prerequisites:
 
