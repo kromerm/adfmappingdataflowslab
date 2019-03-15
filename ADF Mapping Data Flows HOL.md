@@ -49,8 +49,7 @@ Before starting this lab, you will need the following prerequisites:
 
 Once the prerequisites are created, you are ready to begin the lab.
 
-Exercise 1 – Deploying Data Flow Templates
-==========================================
+## Exercise 1 – Deploying Data Flow Templates
 
 In this exercise, you will deploy a new pipeline by using a template. The
 template will create example data flows that implement several data
@@ -98,6 +97,9 @@ transform data.
     5.  This will create 2 pipelines, 3 Data Flows, and 11 Datasets
 
         ![](media/2bd7ec756afb4508ce83b2bd41ff3101.png)
+        
+> [!NOTE]
+> Once you have imported your Data Flows and Pipelines from the template, you should switch into "Data Flow Debug" mode. Switch on the debug session with the "Data Flow Debug" button on the top of the browser design surface. The initial start-up time for debug sessions will take about 5-6 minutes. Once the cluster indicator light turns green, you can iteratively work with your data in the data flow. The debug session will keep a cluster alive for you until the TTL expires or you turn off your debug session.
 
 6.  Select the Data Flows tab on the left side, and then select the MovieDemo1
     Data Flow. This will open the Data Flow editor and display 3 components:
@@ -269,8 +271,7 @@ and then output the data to a new text file.
 
 Clean up the environment by closing all of the tabs in the Data Factory Window
 
-Exercise 2 – Examining a Complex Data Flow
-==========================================
+## Exercise 2 – Examining a Complex Data Flow
 
 In this exercise, you will examine a complex data flow that uses joins and
 aggregations to transform data. The dataset used in this example is from the New
