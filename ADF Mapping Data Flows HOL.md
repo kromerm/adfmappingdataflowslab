@@ -1,5 +1,7 @@
 # Azure Data Factory Mapping Data Flows Hands-on Lab
 
+Special thanks to 
+
 ## Introduction
 
 Azure Data Factory (ADF) is a hybrid ETL service, designed to ease the construction of complex data integrations pipelines. Mapping Data Flows, a feature of ADF, is designed to enable graphical construction of data transformation pipelines, at scale, using the Azure Databricks Spark engine, without the need for any hand coding or Spark knowledge.
@@ -101,6 +103,8 @@ transform data.
 *** NOTE
 ***Once you have imported your Data Flows and Pipelines from the template, you should switch into "Data Flow Debug" mode. Switch on the debug session with the "Data Flow Debug" button on the top of the browser design surface. The initial start-up time for debug sessions will take about 5-6 minutes. Once the cluster indicator light turns green, you can iteratively work with your data in the data flow. The debug session will keep a cluster alive for you until the TTL expires or you turn off your debug session.
 
+![debug session](media/data-flow/newdebug2.png "New Debug")
+
 6.  Select the Data Flows tab on the left side, and then select the MovieDemo1
     Data Flow. This will open the Data Flow editor and display 3 components:
 
@@ -189,7 +193,7 @@ transform data.
 
 13. Select the *MoviesYear* object
 
->   [./media/image23.png](./media/image23.png)
+### Transform Data with Data Flow Expressions
 
 1.  Examine the *Derived Columns Settings*, and note the function being used to
     extract the year and the title. (In this example, year is an integer value
@@ -229,21 +233,19 @@ transform data.
     to view the data
 
     ![](media/b246ab1d86b3146fa456ac93f67d4d71.png)
+    
+### Test the Data Flow in a Pipeline for End-to-End Execution
 
-7.  The Data Flow is now ready to execute. Select *Publish All* in the
-    upper-left of the window, and wait for the publish process to complete
-    (monitor the alerts dialog in the upper right to verify completion)
-
-    ![](media/b5cf283ce0b3720b1411c49c2db075d8.png)
-
-8.  Click on the *MovieDemoPipeline* tab to return to the pipeline. Notice that
+Executing the Data Flow from the Data Flow design surface in debug mode does not output any data nor does it write to a database. The Sink is essentially ignored. In order to test your data flow end-to-end, you'll debug the pipeline from the ADF pipeline UI and then use the Debug button from the pipeline. Make sure that you have switched on the "Data Flow Debug" toggle switch so that pipeline debug can use an active warm cluster for debugging.
+    
+1.  Click on the *MovieDemoPipeline* tab to return to the pipeline. Notice that
     there is only one object, which is the Data Flow Execution object. This
     simply is an orchestration container to execute the Data Flow that we just
     examined
 
     ![](media/de847dd5d558f80cea958378818d9d04.png)
 
-9.  Select *Debug* to execute the pipeline. This will open the execution monitor
+2.  Select *Debug* to execute the pipeline. This will open the execution monitor
     in debug mode
 
     ![](media/5d559d218b1f3c66b42e9c4eacc23614.png)
@@ -255,7 +257,7 @@ transform data.
 
     2.  Once the execution completes, you will see results such as the above
 
-10. To view the contents of the output file, use either Azure Storage Explorer,
+3. To view the contents of the output file, use either Azure Storage Explorer,
     or the Azure Portal to view the contents of the storage container that you
     created earlier. You will note that there are new files in the container.
     Select the file that begins with part-00000 and select View/Edit Blob from
@@ -384,8 +386,7 @@ tabs and returning to the blank canvas.
 
 ![](media/aee98c3c5df23b90f638cbbcedd647ae.png)
 
-Exercise 3
-==========
+## Exercise 3
 
 In previous exercises you used a pre-constructed Pipeline and Data Flow in order
 to view concepts that are used to construct Data Flows. These Data Flows were
@@ -395,8 +396,7 @@ implement a specific business scenario that will read data from a web service
 (using the SODA protocol, which is a generic http web service), transform the
 data, and output to an Azure SQL Database instance.
 
-The Scenario
-------------
+### The Scenario
 
 The City of Chicago publishes data for each police report that is filed within
 the city. This data is made available via a web service connection.
