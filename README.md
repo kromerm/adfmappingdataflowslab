@@ -1,1 +1,1 @@
-This is a self-paced hands-on lab for learning how to build Mapping Data Flows in Azure Data Factory.
+This is a self-paced hands-on lab for learning how to build Mapping Data Flows in Azure Data Factory. This lab was constructed by Microsoft's Solution Architect extraordinaire, [Ted Malone](https://github.com/temalo).
