@@ -101,7 +101,7 @@ transform data.
 *** NOTE
 ***Once you have imported your Data Flows and Pipelines from the template, you should switch into "Data Flow Debug" mode. Switch on the debug session with the "Data Flow Debug" button on the top of the browser design surface. The initial start-up time for debug sessions will take about 5-6 minutes. Once the cluster indicator light turns green, you can iteratively work with your data in the data flow. The debug session will keep a cluster alive for you until the TTL expires or you turn off your debug session.
 
-![debug session](media/data-flow/newdebug2.png "New Debug")
+![debug session](media/newdebug2.png "New Debug")
 
 6.  Select the Data Flows tab on the left side, and then select the MovieDemo1
     Data Flow. This will open the Data Flow editor and display 3 components:
