@@ -137,11 +137,14 @@ transform data.
 
     ![](media/7854b607afcb2bcf749b8fd1f1e653c4.png)
 
-    1.  These options are very useful if you need to specify a list of specific
-        files to process that aren’t easily addressed with a wildcard, or if
-        you’d like to include lineage information in the data flow. The *After
-        completion* radio button options allow you to easily delete or move
-        source files once the process is complete.
+    1.  *Wildcard paths* allow you to process all source files matching the wildcard path.
+    
+    2. *List of files* checkbox allows you to point to a text file that lists each file path you wish to process. This option is particularly helpful in situations where the specific files to process aren't easily addressed with a wildcard.
+    
+    3. *Column to store filename* allows you to create a new column name in the source data stream that defines the source file name and path. This option is particularly useful for capturing lineage information in the data flow.
+    
+    4. *After completion* radio button allows you to define the action to take on the source files onced they have been processed. This allows you to automate deleting or moving
+    the source files once the process is complete.
 
 9.  Select the *Projection* tab
 
