@@ -118,7 +118,7 @@ transform data.
 
         ![](media/c2d88241d30577474bb2196fc80054db.png)
 
-    2.  Click *Preview data* to view the first few rows of the dataset
+    2.  Click the *Connection* tab then click *Preview data* to view the first few rows of the dataset
 
         ![](media/2318dc14eca9f264455d89006a7fa081.png)
 
