@@ -192,7 +192,7 @@ transform data.
     4.  Note the format of the data in the title column. In the next section you
         will use a derived column object to extract the Year of the movie.
 
-13. Select the *MoviesYear* object
+NOTE: No data is written to the sink datasets during debug sessions in the Data Flow designer. In order to output data and write to the destination, you must execute your Data Flow as an activity inside a pipeline. You can test the data flow as part of an end-to-end test from a pipeline using the pipeline Debug button.
 
 ### Transform Data with Data Flow Expressions
 
